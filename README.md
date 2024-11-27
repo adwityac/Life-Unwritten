@@ -11,7 +11,7 @@ Welcome to **Life Unwritten**, a narrative-driven game where you explore relatio
 - [How to Play](#how-to-play)
 - [Installation](#installation)
 - [Contribution Guidelines](#contribution-guidelines)
-- [License](#license)
+- [Acknowledgments](#acknowledgements)
 
 ## About the Game
 
@@ -67,10 +67,6 @@ We welcome contributions to enhance the game! Here's how you can help:
 3. Ensure your code follows the [PEP 8](https://peps.python.org/pep-0008/) Python style guide.
 
 Feel free to suggest new features, fix bugs, or improve the documentation!
-
-## License
-
-This project is licensed under the GNU License. See the `LICENSE` file for details.
 
 ## Acknowledgments
 
