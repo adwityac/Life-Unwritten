@@ -11,7 +11,7 @@ Welcome to **Life Unwritten**, a narrative-driven game where you explore relatio
 - [How to Play](#how-to-play)
 - [Installation](#installation)
 - [Contribution Guidelines](#contribution-guidelines)
-- [Acknowledgments](#acknowledgements)
+- [Acknowledgments](#acknowledgments)
 
 ## About the Game
 
