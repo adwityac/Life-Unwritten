@@ -1,9 +1,10 @@
 import random
 
+
 class Player:
     def __init__(self):
         self.mood = 50  # 0 = depressed, 100 = content and confident
-        self.relationships = {"Friend": 50, "Mentor": 50, "Ex": 50, "Family": 50}
+        self.relationships = {"Old Friend": 50, "Mentor": 50, "Ex-Partner": 50, "Family Member": 50}
         self.current_location = "Park"
         self.past_choices = []
 
@@ -33,6 +34,7 @@ class Player:
         else:
             print("\nNo past choices made yet.")
 
+
 class NPC:
     def __init__(self, name, initial_relationship):
         self.name = name
@@ -61,11 +63,17 @@ class NPC:
         else:
             print("\nInvalid choice. No action taken.")
 
+
 # Game setup
 def intro(player):
     print("Life Unwritten - A Journey of Choices")
-    print("\nYou find yourself standing in the middle of a park. The world around you feels uncertain, like everything you've done in life has led you to this point.")
-    print("You have the chance to reconnect with those who matter to you, reflect on your past decisions, and ultimately decide where you want your future to go.")
+    print(
+        "\nYou find yourself standing in the middle of a park. The world around you feels uncertain, like everything "
+        "you've done in life has led you to this point.")
+    print(
+        "You have the chance to reconnect with those who matter to you, reflect on your past decisions, "
+        "and ultimately decide where you want your future to go.")
+
 
 def game_loop(player):
     npc_friend = NPC("Old Friend", 50)
@@ -73,7 +81,7 @@ def game_loop(player):
     npc_ex = NPC("Ex-Partner", 40)
     npc_family = NPC("Family Member", 50)
 
-    while player.mood > 0 and player.mood < 100:
+    while 0 < player.mood < 100:
         player.check_status()
 
         print("\nWhere do you want to go next?")
@@ -103,7 +111,9 @@ def game_loop(player):
             npc_family.offer_choice(player)
 
         elif choice == '5':
-            print("\nYou sit on a bench, reflecting on your past decisions. You realize there are things you regret, but there's also potential for change.")
+            print(
+                "\nYou sit on a bench, reflecting on your past decisions. You realize there are things you regret, "
+                "but there's also potential for change.")
             player.change_mood(10)
 
         elif choice == '6':
@@ -119,13 +129,16 @@ def game_loop(player):
 
         # Check if game should end
         if player.mood <= 0:
-            print("\nYou feel completely lost. You’ve fallen into a deep emotional slump and don’t know how to move forward.")
+            print(
+                "\nYou feel completely lost. You’ve fallen into a deep emotional slump and don’t know how to move forward.")
             print("The journey ends here. Perhaps it’s time to reflect on what’s next...")
             break
         elif player.mood >= 100:
-            print("\nYou’ve come to terms with your past. You’ve made peace with yourself and others, and now you’re ready to move forward in life with clarity and purpose.")
+            print(
+                "\nYou’ve come to terms with your past. You’ve made peace with yourself and others, and now you’re ready to move forward in life with clarity and purpose.")
             print("The journey ends here. You are at peace.")
             break
+
 
 # Game start
 if __name__ == "__main__":
