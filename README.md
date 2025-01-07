@@ -72,4 +72,7 @@ Feel free to suggest new features, fix bugs, or improve the documentation!
 
 Thank you to GitHub Game Off 2024 for inspiring this project and to everyone who plays, contributes, or supports *Life Unwritten*.
 
+## License
+This project is licensed under the [Apache License 2.0](LICENSE).
+
 ## 🌟 *Your Choices. Your Story. Your Journey.* 🌟
