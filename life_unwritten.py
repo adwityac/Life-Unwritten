@@ -1,3 +1,5 @@
+#CLI Text Baed Game for Github GameOff 2024
+
 import random
 import time
 import json
